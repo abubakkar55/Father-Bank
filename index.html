@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bapp Er Bank </title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--  tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<!-- custom css -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="text-5xl text-center pb-6 my-10 main__heading"> Welcome to My <span class="font-semibold text-indigo-400">Bapp Er Bank!! </span> </h1>
+</header>
+<main>
+    <section class="w-3/4 mx-auto bg-white shadow-md rounded-2xl p-10">
+        <h3 class="text-3xl font-medium text-center pb-3">Login to your Account </h3>
+        <div>
+<input  class="w-full block bg-gray-100 mt-5 p-3 rounded-md outline-none ring-1 ring-gray-200 focus:ring-2 focus:ring-indigo-400" type="email" name="" id="email" placeholder="Enter Your Email Address" required>
+
+<input  class="w-full block bg-gray-100 mt-5 p-3 rounded-md outline-none ring-1 ring-gray-200 focus:ring-2 focus:ring-indigo-400" type="number" name="" id="phone" placeholder="Enter Your Phone Number" required>
+
+<input  class="w-full block bg-gray-100 mt-5 p-3 rounded-md outline-none ring-1 ring-gray-200 focus:ring-2 focus:ring-indigo-400" type="password" name="" id="password" placeholder="Enter Your Password" required>
+<small id="email-warning" class="text-sm text-red-600 block mt-2" style="visibility: hidden;"> ⚠️ please user enter the valid information </small>
+<button class="mt-4 px-7 py-2 bg-indigo-500 text-white font-medium rounded shadow" type="submit" id="submit-btn">Submit </button> 
+        </div>
+    </section>
+</main>
+<script src="js/login.js"></script>
+</body>
+</html>

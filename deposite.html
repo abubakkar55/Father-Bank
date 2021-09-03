@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Father Money </title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--  tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center pb-6 my-6 main__heading deposit"> Let's get some <span
+                class="font-semibold text-green-400"> Moooney!! </span> </h1>
+    </header>
+    <main class="w-3/4 mx-auto ">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-300 p-8 rounded  shadow" id="deposit">
+                    <h3 class="text-2xl font-medium">Deposit </h3>
+                    <h3 class="text-4xl mt-1">$<span id="deposit-amount">00 </span> </h3>
+                </div>
+                <div class="bg-green-300 p-8 rounded  shadow" id="withdraw">
+                    <h3 class="text-2xl font-medium">Withdraw </h3>
+                    <h3 class="text-4xl  mt-1">$<span id="withdraw-amount">00</span></h3>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded  shadow" id="total">
+                    <h3 class="text-2xl font-medium"> Balance </h3>
+                    <h3 class="text-4xl  mt-1">$<span id="total-amount">1460 </span> </h3>
+                </div>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <h3 class="text-2xl font-medium text-center pb-3"> Please Deposit</h3>
+                    <div class="bg-blue-50 p-6 rounded shadow">
+                        <input
+                            class="w-full block bg-gray-100 mt-5 p-3 rounded-md outline-none ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-400"
+                            type="text" name="" id="deposit-field" placeholder="Enter Your Deposit Amount" required>
+                            <small class="text-red-700 text-sm block mt-1 mb-2" id="deposit-warning"  style="visibility: hidden;"> ⚠️ please enter correct numbers </small>
+                        <button class="mt-2 px-7 py-2 bg-blue-500 text-white font-medium rounded shadow" type="submit"
+                            id="deposit-btn">Deposit </button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-medium text-center pb-3"> Please Withdraw</h3>
+                    <div class="bg-green-50 p-6 rounded shadow">
+                        <input
+                            class="w-full block bg-gray-100 mt-5 p-3 rounded-md outline-none ring-1 ring-gray-200 focus:ring-2 focus:ring-green-400"
+                            type="text" name="" id="withdraw-field" placeholder="Enter Your Withdraw Amount" required>
+                            <small class="text-red-700 text-sm block mt-1 mb-2" id="withdraw-warning" style="visibility: hidden;"> ⚠️ please enter correct numbers </small>
+                            <small class="text-red-700 text-sm block mt-1 mb-2" id="balance-warning" style="display: none;"> ⚠️ sorry!! you can't withdraw more than your Balance </small>
+                        <button class="mt-2 px-7 py-2 bg-green-500 text-white font-medium rounded shadow" type="submit"
+                            id="withdraw-btn"> Withdraw </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--  back btn -->
+    <button id="back-btn" class="absolute top-12 left-12 bg-gray-50 px-9 py-2 shadow rounded text-green-300"> Back
+    </button>
+
+    <script src="js/functional.js"></script>
+</body>
+
+</html>
